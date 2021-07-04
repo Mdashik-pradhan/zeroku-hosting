@@ -2,6 +2,9 @@
 
 :root {
     --primary-color: #047aed;
+    --secondary-color: #1c3fa8;
+    --dark-color: #002240;
+    --light-color: #f4f4f4;
 }
 
 * {
@@ -156,4 +159,34 @@ img {
 .cli .grid > *:first-child {
     grid-column: 1 / span 2;
     grid-row: 1 / span 2;
+}
+
+/* Cloud */
+
+.cloud .grid {
+    grid-template-columns: 4fr 3fr;
+}
+
+
+/* Languages */
+.languages .flex {
+    flex-wrap: wrap;
+}
+.languages .card {
+    text-align: center;
+    margin: 18px 10px 40px;
+    transition: transform 0.25 ease-out;
+}
+.languages .card img{
+    width: 60px;
+    height: 70px;
+}
+
+.languages .card h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.languages .card:hover {
+    transform: translateY(-15px);
 }
